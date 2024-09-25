@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+ <!-- Google Font -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+        }
+
+        header.hero {
+            background: url('img.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        #contact {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Apply the Google font to the hero heading and paragraph */
+        .hero h1 {
+            font-family: sans-serif;
+        }
+
+        .hero p {
+            font-family: 'Dancing Script', cursive; /* Change to cursive font */
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-info img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #28a745;
+            outline: none;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #343a40;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">FusionDev</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero text-white text-center">
+        <div class="container">
+            <h1>Welcome to Our Website</h1>
+            <p style="font-family: 'Dancing Script', cursive;">“Empowering your vision with code, we turn your challenges into seamless solutions. Let’s innovate together!"</p>
+            <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light section slide-left">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="about section.avif" alt="About Us" class="img-fluid rounded shadow about-image">
+                </div>
+                <div class="col-md-6">
+                    <h3>Our Mission</h3>
+                    <p>At Our Company, we strive to deliver top-notch solutions tailored to your needs. Our mission is to empower our clients with innovative services that promote growth and efficiency.</p>
+                    <h3>Who We Are</h3>
+                    <p>We are a passionate team of professionals dedicated to providing exceptional service and support. With years of experience across various industries, we understand the unique challenges you face and are here to help you overcome them.</p>
+                    <h3>Our Values</h3>
+                    <p>Integrity, quality, and customer satisfaction are at the core of everything we do. We believe in building long-lasting relationships with our clients based on trust and transparency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5 section slide-right">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="user experience.jpeg" class="card-img-top" alt="Service 1">
+                        <div class="card-body">
+                            <h5 class="card-title">User Experience</h5>
+                            <p class="card-text">We prioritize creating intuitive and engaging user experiences that keep your audience coming back. Our UX design process focuses on understanding your users’ needs, behaviors, and pain points through extensive research and testing. We craft user-friendly interfaces that enhance usability, streamline navigation, and ensure that every interaction feels seamless and enjoyable.</p>
+                            <p class="card-text"><small class="text-muted">Available 24/7</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="creative design.jpg" class="card-img-top" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Creative Design</h5>
+                            <p class="card-text">We believe that creativity is at the heart of effective communication. Our Creative Design services transform your ideas into visually captivating concepts that resonate with your audience. Whether it's branding, marketing materials, or digital assets, our talented team of designers works collaboratively to develop innovative solutions tailored to your needs and requirements</p>
+                            <p class="card-text"><small class="text-muted">Contact us for a quote</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="reatina ready.jpeg" class="card-img-top" alt="Service 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Retina Ready</h5>
+                            <p class="card-text">In today's digital landscape, delivering crisp and clear visuals is essential. Our Retina Ready service ensures that your website and digital content look stunning on high-resolution displays. By utilizing advanced image optimization techniques and responsive design principles, we guarantee that your graphics, icons, and photos maintain their clarity and quality across all devices. </p>
+                            <p class="card-text"><small class="text-muted">Satisfaction guaranteed</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 section slide-left">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center">Have questions? Reach out to us anytime, and we'll be happy to help.</p>
+            <div class="text-center mb-4">
+                <div class="contact-info">
+                    <img src="phone.png" alt="Phone">
+                    <p>+91 1234 567 890</p>
+                </div>
+                <div class="contact-info">
+                    <img src="email.png" alt="Email">
+                    <p>fusiondev@company.com</p>
+                </div>
+            </div>
+            <!-- Card for the form -->
+            <div class="card mx-auto" style="max-width: 600px;">
+                <div class="card-body">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" class="form-control" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" class="form-control" id="last-name" name="last-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Pallavi M.B. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

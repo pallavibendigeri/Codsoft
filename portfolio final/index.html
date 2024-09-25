@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Pallavi M.B.</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Pallavi M.B.</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+        </div>
+    </div>
+        
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./images/mypic.jpg" alt="Pallavi Profile pic"/>
+    </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am</p>
+                <h1 Class="title">Pallavi Bendigeri</h1>
+                <p class="section__text__p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <!-- need to change the pdf -->
+                    <button class="btn btn-color-2" onclick="window.open('images/myCV.pdf', '_blank')">
+                        Download CV
+                    </button> 
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <!-- <-- need to change the image and link -->
+                   <img 
+                   src="images/linkdin.png" 
+                   alt="My linkdin Profile" 
+                   class="icon" 
+                   onclick="location.href='https://www.linkedin.com/in/pallavi-bendigeri-24419927a/'"/>
+                    <img src="images/github...png" 
+                    alt="My github Profile" 
+                    class="icon" 
+                    onclick="location.href='https://github.com/pallavibendigeri'"/>  
+              </div>   
+         </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./images/am.jpg" alt="profile picture" class="about-pic">
+            </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./images/skills.jpg" alt="Skills icon" class="icon"/>
+                            <h3>Skills</h3>
+                            <p>Frontend Web Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./images/education.png" alt="Education icon" class="icon"/>
+                            <h3>Education</h3>
+                            <p>Bachelor of Engineering in Electronics and communication</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>As a passionate front-end web developer, I thrive on transforming creative ideas into dynamic, user-friendly experiences. My journey in web development has equipped me with a strong foundation in HTML, CSS, and JavaScript, allowing me to craft visually appealing and responsive websites. I love experimenting with new technologies and design trends, always striving to enhance usability and accessibility. With a keen eye for detail and a commitment to continuous learning, I am excited to create engaging digital experiences that leave a lasting impression.
+
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-conatiner">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="skills-sub-title">Frontend Web Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./images/tickmarks.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/tickmarks.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/tickmarks.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/tickmarks.png" alt="Skills icon" class="icon">
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+              </div>
+
+                 <div class="details-containers">
+                        <h2 class="skills-sub-title">Backend Web Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./images/tickmarks.png" alt="Skills icon" class="icon">
+                                <div>
+                                    <h3>PostgreSQL</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./images/tickmarks.png" alt="Skills icon" class="icon">
+                                <div>
+                                    <h3>Node JS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./images/tickmarks.png" alt="Skills icon" class="icon">
+                                <div>
+                                    <h3>Express JS</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./images/tickmarks.png" alt="Skills icon" class="icon">
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>  
+                        </div>
+                 </div>
+            </div>
+            <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/project1.jpeg"
+                     alt="Project 1" 
+                     class="project-img">
+                </div>
+                <h2 class="experience-sub-title__project-title">Arduiomo based Automatic Car wiper</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('images/project1.pdf', '_blank')">Detailed Explaination</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/shorts/uAle9WyT4Yg?feature=share'">Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/project2.jpeg"
+                     alt="Project 2" 
+                     class="project-img">
+                </div>
+                <h2 class="experience-sub-title__project-title">Water quality Monitoring system</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('images/project2.pdf', '_blank')">Detailed Explaination</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/shorts/K1WocU1iC6o?feature=share'">Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/p3.jpeg"
+                     alt="Project 3" 
+                     class="project-img">
+                </div>
+                <h2 class="experience-sub-title__project-title">Automatic Grains protecting roof</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('images/project3.pdf', '_blank')">Details Explaination</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/Dd-sQNIEPW4'">Demo</button>
+                </div>
+             </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-contrainer">
+            <div class="contact-info-container">
+                <img src="./images/mail.png" alt="email icon" class="icon contact-icon">
+                <p><a href="mailto:pallavibendigeri3@gmail.com">pallavibendigeri3@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./images/linkdin.png" alt="linkdin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/pallavi-bendigeri-24419927a/">Linkdin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Pallavi M.B. all rights reserved</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
